@@ -9,9 +9,6 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-
-
-
 CFLAGS = -Wall -g
 
 ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
@@ -47,9 +44,9 @@ install: build
 	dh_installdirs
 	
 	rm -rf $(CURDIR)/debian/thunderbird/*
-	mkdir -p $(CURDIR)/debian/thunderbird
+	mkdir -p $(CURDIR)/debian/thunderbird/opt
+	/bin/bash $(CURDIR)/update.sh $(DEB_HOST_ARCH) $(CURDIR)
 	cp -r $(CURDIR)/usr $(CURDIR)/debian/thunderbird/
-	mv $(CURDIR)/opt $(CURDIR)/debian/thunderbird/
 
 # Build architecture-independent files here.
 binary-indep: build install
