@@ -1,3 +1,9 @@
+thunderbird (17.0) debian; urgency=low
+
+  * 17.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 22 Nov 2012 15:58:11 +0000
+
 thunderbird (14.0) debian; urgency=low
 
   * 14.0
