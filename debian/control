@@ -1,0 +1,13 @@
+Source: thunderbird
+Section: mail
+Priority: optional
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 3.7.2
+
+Package: thunderbird
+Architecture: any
+Depends: thunderbird-l10n | thunderbird-l10n-en-us
+Description: The Thunderbird email client
+ The Mozilla Thunderbird email client.
+
