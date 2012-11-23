@@ -2,7 +2,7 @@ Source: thunderbird
 Section: mail
 Priority: optional
 Maintainer: Clement Lefebvre <root@linuxmint.com>
-Build-Depends: debhelper (>= 5), wget
+Build-Depends: debhelper (>= 5), wget, python
 Standards-Version: 3.7.2
 
 Package: thunderbird
@@ -10,4 +10,236 @@ Architecture: any
 Depends: thunderbird-l10n | thunderbird-l10n-en-us
 Description: The Thunderbird email client
  The Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-en-us
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n, thunderbird-l10n-sr
+Conflicts: thunderbird-l10n, thunderbird-l10n-sr
+Description: American language packs for Thunderbird
+ American language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-fr
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: French language packs for Thunderbird
+ French language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-ar
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Arabic language packs for Thunderbird
+ Arabic language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-bn
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Bengali language packs for Thunderbird
+ Bengali language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-cs
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Czech language packs for Thunderbird
+ Czech language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-da
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Danish language packs for Thunderbird
+ Danish language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-de
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: German language packs for Thunderbird
+ German language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-el
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Greek language packs for Thunderbird
+ Greek language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-en-gb
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: British language packs for Thunderbird
+ British language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-es
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Spanish language packs for Thunderbird
+ Spanish language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-fi
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Finnish language packs for Thunderbird
+ Finnish language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-he
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Hebrew language packs for Thunderbird
+ Hebrew language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-hu
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Hungarian language packs for Thunderbird
+ Hungarian language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-id
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Indonesian language packs for Thunderbird
+ Indonesian language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-it
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Italian language packs for Thunderbird
+ Italian language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-ja
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Japanese language packs for Thunderbird
+ Japanese language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-ko
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Korean language packs for Thunderbird
+ Korean language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-nb
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Bokmal language packs for Thunderbird
+ Bokmal language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-nn
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Nynorsk language packs for Thunderbird
+ Nynorsk language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-nl
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Dutch language packs for Thunderbird
+ Dutch language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-pl
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Polish language packs for Thunderbird
+ Polish language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-pt
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Portuguese language packs for Thunderbird
+ Portuguese language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-pt-br
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Portuguese Brazilian language packs for Thunderbird
+ Portuguese Brazilian language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-ro
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Romanian language packs for Thunderbird
+ Romanian language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-ru
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Russian language packs for Thunderbird
+ Russian language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-sv
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Swedish language packs for Thunderbird
+ Swedish language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-tr
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Turkish language packs for Thunderbird
+ Turkish language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-uk
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Ukrainian language packs for Thunderbird
+ Ukrainian language packs for the Mozilla Thunderbird email client.
+
+Package: thunderbird-l10n-zh
+Architecture: any
+Provides: thunderbird-l10n
+Replaces: thunderbird-l10n
+Conflicts: thunderbird-l10n
+Description: Chinese language packs for Thunderbird
+ Chinese language packs for the Mozilla Thunderbird email client.
 
