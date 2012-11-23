@@ -13,8 +13,8 @@ if "+" in version:
         abort = True
     release = version.split("+")[0]   
     
-if "-" in version:
-    release = version.split("-")[0]
+if "~" in version:
+    release = version.split("~")[0]
 
 if archi == "amd64":
     archi="linux-x86_64"
