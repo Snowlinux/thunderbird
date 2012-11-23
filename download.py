@@ -7,10 +7,14 @@ curdir = sys.argv[2]
 release = sys.argv[3]
 abort = False 
 
-if "+" in release:
-    if "lmde" not in release:
+release = version
+if "+" in version:
+    if "lmde" not in version:
         abort = True
-    release = release.split("+")[0]    
+    release = version.split("+")[0]   
+    
+if "-" in version:
+    release = version.split("-")[0]
 
 if archi == "amd64":
     archi="linux-x86_64"
@@ -51,6 +55,7 @@ locales['zh-CN'] = 'zh'
 for locale in locales:
     if (locale == "en-US"):
         os.system("mkdir -p %s/debian/thunderbird/opt" % curdir)
+        os.system("mkdir -p %s/debian/thunderbird-l10n-%s/opt/thunderbird" % (curdir, locales[locale]))
         os.chdir("%s/debian/thunderbird/opt" % curdir)
     else:
         os.system("mkdir -p %s/debian/thunderbird-l10n-%s/opt" % (curdir, locales[locale]))
@@ -67,7 +72,7 @@ for locale in locales:
         os.system("rm thunderbird-%s.tar" % release)
                 
         if (locale == "en-US"):
-            os.system("rm thunderbird/omni.ja")                    
+            os.system("mv thunderbird/omni.ja %s/debian/thunderbird-l10n-%s/opt/thunderbird/omni.ja" % (curdir, locales[locale]))                    
         else:        
             os.system("mv thunderbird/omni.ja ./")
             os.system("rm -rf thunderbird/*")
