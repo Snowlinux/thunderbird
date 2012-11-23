@@ -17,6 +17,8 @@ else
 	CFLAGS += -O2
 endif
 
+DEB_VERSION=$(shell dpkg-parsechangelog | sed -n 's/^Version: //p')
+
 configure: configure-stamp
 configure-stamp:
 	dh_testdir
@@ -45,7 +47,7 @@ install: build
 	
 	rm -rf $(CURDIR)/debian/thunderbird/*
 	mkdir -p $(CURDIR)/debian/thunderbird/opt
-	/bin/bash $(CURDIR)/update.sh $(DEB_HOST_ARCH) $(CURDIR)
+	/bin/bash $(CURDIR)/update.sh $(DEB_HOST_ARCH) $(CURDIR) $(DEB_VERSION)
 	cp -r $(CURDIR)/usr $(CURDIR)/debian/thunderbird/
 
 # Build architecture-independent files here.

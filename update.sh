@@ -2,6 +2,7 @@
 
 ARCHI=$1
 CURDIR=$2
+RELEASE=$3
 if [[ $ARCHI == *amd64* ]]; then
  ARCH_URL="x86_64"
 else
@@ -10,13 +11,11 @@ fi
 
 echo "Downloading Thunderbird for $ARCHI"
 cd $CURDIR/debian/thunderbird/opt
-wget -nd -r -l1 --no-parent -A "*.bz2" http://releases.mozilla.org/pub/mozilla.org/thunderbird/releases/latest/linux-$ARCH_URL/en-US/
-mv *bz2 thunderbird.tar.bz2
-bzip2 -d thunderbird.tar.bz2
-tar xvf thunderbird.tar
-rm thunderbird.tar
+wget http://releases.mozilla.org/pub/mozilla.org/thunderbird/releases/latest/linux-$ARCH_URL/en-US/thunderbird-$RELEASE.tar.bz2
+bzip2 -d thunderbird-$RELEASE.tar.bz2 || exit 1
+tar xvf thunderbird-$RELEASE.tar
+rm thunderbird-$RELEASE.tar
 rm thunderbird/omni.ja
-rm -rf robots.txt
 cd $CURDIR
 
 
