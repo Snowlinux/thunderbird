@@ -4,7 +4,7 @@ import os, sys, commands
 
 archi = sys.argv[1]
 curdir = sys.argv[2]
-release = sys.argv[3]
+version = sys.argv[3]
 abort = False 
 
 release = version
