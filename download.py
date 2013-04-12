@@ -62,7 +62,7 @@ for locale in locales:
         os.chdir("%s/debian/thunderbird-l10n-%s/opt" % (curdir,locales[locale]))
 
     if not abort:        
-        os.system("wget http://releases.mozilla.org/pub/mozilla.org/thunderbird/releases/latest/%s/%s/thunderbird-%s.tar.bz2" % (archi, locale, release))
+        os.system("wget http://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/latest/%s/%s/thunderbird-%s.tar.bz2" % (archi, locale, release))
         if (not os.path.exists("thunderbird-%s.tar.bz2" % release)):
             print "FAILED: Could not download http://releases.mozilla.org/pub/mozilla.org/thunderbird/releases/latest/%s/%s/thunderbird-%s.tar.bz2" % (archi, locale, release)
             sys.exit(1)
