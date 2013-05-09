@@ -1,7 +1,7 @@
 Source: thunderbird
 Section: mail
 Priority: optional
-Maintainer: Clement Lefebvre <root@linuxmint.com>
+Maintainer: Lars Torben Kremer <lars@snowlinux.de>
 Build-Depends: debhelper (>= 5), wget, python
 Standards-Version: 3.7.2
 
