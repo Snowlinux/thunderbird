@@ -9,7 +9,7 @@ abort = False
 
 release = version
 if "+" in version:
-    if "lmde" not in version:
+    if "snowlinux" not in version:
         abort = True
     release = version.split("+")[0]   
     
@@ -22,6 +22,7 @@ else:
     archi="linux-i686"
 
 locales = {}
+locales['en-US'] = 'en-us'
 locales['ar'] = 'ar'
 locales['bn-BD'] = 'bn'
 locales['cs'] = 'cs'
@@ -29,7 +30,6 @@ locales['da'] = 'da'
 locales['de'] = 'de'
 locales['el'] = 'el'
 locales['en-GB'] = 'en-gb'
-locales['en-US'] = 'en-us'
 locales['es-ES'] = 'es'
 locales['fi'] = 'fi'
 locales['fr'] = 'fr'
